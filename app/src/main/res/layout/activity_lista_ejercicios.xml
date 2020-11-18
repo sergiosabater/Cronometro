@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".vista.ListaEjerciciosActivity">
+
+    <CheckBox
+        android:id="@+id/CB_Ejercicio1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="128dp"
+        android:text="Salto en cruz"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/CB_Ejercicio2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:text="Flexion y salto"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/CB_Ejercicio1"
+        app:layout_constraintTop_toBottomOf="@+id/CB_Ejercicio1" />
+
+    <CheckBox
+        android:id="@+id/CB_Ejercicio3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="33dp"
+        android:text="Flexiones"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/CB_Ejercicio2"
+        app:layout_constraintTop_toBottomOf="@+id/CB_Ejercicio2" />
+
+    <CheckBox
+        android:id="@+id/CB_Ejercicio4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:text="Salta a la comba"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/CB_Ejercicio3"
+        app:layout_constraintTop_toBottomOf="@+id/CB_Ejercicio3" />
+
+    <CheckBox
+        android:id="@+id/CB_Ejercicio5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="33dp"
+        android:text="Escalador"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/CB_Ejercicio4"
+        app:layout_constraintTop_toBottomOf="@+id/CB_Ejercicio4" />
+
+    <CheckBox
+        android:id="@+id/CB_Ejercicio6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:text="Puños"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/CB_Ejercicio5"
+        app:layout_constraintTop_toBottomOf="@+id/CB_Ejercicio5" />
+
+    <Button
+        android:id="@+id/btn_Enviar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ENVIAR"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.907" />
+
+    <TextView
+        android:id="@+id/TV_listaEjercicios"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:text="Selecciona ejercicio:"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
